@@ -52,4 +52,7 @@ const LoginUser=async(req,res)=>{
         })
     }
 }
+const viewAlluser=async(req,res)=>{
+    
+}
 module.exports={RegisetrUser,LoginUser}

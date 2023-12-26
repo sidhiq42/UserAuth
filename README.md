@@ -1,4 +1,4 @@
-# Its My First Register and Login Page 
+# It is my Git Hub Repo Simple Register and Login
 
-1. frontend  run:-yarn dev
-2. backend   run:-yarn start(i nodemon globally installed)
+* client run :- yarn dev
+* serer run  :- yarn start("nodemon installed globally ")

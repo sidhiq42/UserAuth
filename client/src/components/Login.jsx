@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
-import axios from 'axios'
+import { useState } from "react";
+import axios from "axios";
 function Login() {
   const [formData, setFormData] = useState({
     email: '',
     password: '',
   });
-
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -15,9 +14,10 @@ function Login() {
     try {
       const response = await axios.post('/auth/login', formData);
       console.log(response.data);
+
       // Handle success, maybe store user data in state or local storage
     } catch (error) {
-      console.error(error.response.data);
+      console.error(error);
       // Handle error, show error message to the user
     }
   };
